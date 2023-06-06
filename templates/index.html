@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="YouTube Logo">
+        </div>
+        <h1>YouTube Sentiment Analysis</h1>
+        <form action="/process" method="post">
+            <label for="url">Video URL:</label>
+            <input type="text" id="url" name="url"><br><br>
+            <label for="num_comments">Number of Comments:</label>
+            <input type="text" id="num_comments" name="num_comments"><br><br>
+            <label for="api_key">API Key:</label>
+            <input type="text" id="api_key" name="api_key"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          @keyframes slideInLeft {
+            from {
+              opacity: 0;
+              transform: translateX(-20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
+          
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+          }
+          
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          .logo {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: slideInLeft 0.8s ease-in;
+          }
+          
+          .logo img {
+            max-width: 200px;
+          }
+          
+          h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            font-size: 32px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          .message {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          .emotion {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          input[type="text"],
+          input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          input[type="submit"]:hover {
+            background-color: #45a049;
+          }
+          
+          .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            animation: fadeIn 0.5s ease-in;
+          }
+          
+          .footer a {
+            color: #888;
+            text-decoration: none;
+          }
+          
+          .footer a:hover {
+            text-decoration: underline;
+          }          
+    </style>
+</head>
+<body>
+    <h1 class="message">{{ message }}</h1>
+    <h1 class="emotion">The predominant emotion in the comments of the video is : {{ dominant_emotion }}</h1>
+</body>
+</html>
+
+
